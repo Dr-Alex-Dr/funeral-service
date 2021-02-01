@@ -1,1 +1,3 @@
-# funeral-service
+# funeral-services
+
+start: npm i
