@@ -1,0 +1,312 @@
+@import "../../node_modules/normalize.css/normalize";
+// @import "../../node_modules/slick-carousel/slick/slick";
+@import "_fonts";
+@import "_global";
+@import "_libs";
+@import "vars";
+
+
+.header{
+    position: relative;
+    &__info{
+        display: flex;
+        align-items: center;
+        background-color: #1F2236;
+        min-height: 40px;
+        color: #fff;
+    }
+    &__info-location{
+        margin-right: 40px;
+    }
+    &__info-wrapper{
+        display: flex;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+        padding: 5px 0px 5px;
+    }
+
+    &__logo{
+        display: flex;
+        color: #000;
+        align-items: center;
+    }
+    &__content-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    &__logo-title{
+        font-size: 24px;
+        line-height: 33px;
+    }
+    &__logo-text{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__emblem{
+        display: flex;
+        width: 280px;
+        align-items: center;
+    }
+    &__emblem-text{
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 15px;
+    }
+
+    &__contact{
+        display: flex;
+        align-items: center;
+    }
+    &__contact-phone{
+        font-size: 24px;
+        line-height: 33px;
+        white-space: nowrap;
+        padding-left: 30px;
+        position: relative;
+        &::before{
+            font-family: 'icomoon';
+            content: "\e942";
+            position: absolute;
+            left: -5px;
+            font-size: 20px;
+            top: -2px;
+        }
+    }
+    &__contact-text{
+        font-size: 14px;
+        line-height: 19px;
+        padding-left: 30px;
+        text-decoration: underline;
+        font-style: italic;
+    }
+    &__btn{
+        width: 170px;
+        min-height: 50px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 25px;
+    }
+}
+.default__btn-1{
+    background-color: #CEA54B;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: #F7F4EB;
+    height: 60px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list-item{
+        // display: inline-block;
+        // margin-left: 50px;
+        font-size: 18px;
+        line-height: 24px;
+        &:first-child{
+            margin-left: 0px;
+        }
+
+    }
+}
+
+.icon-bars{
+    
+}
+.about{
+    min-height: 600px;
+    position: relative;
+    background-image: url('../images/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333333;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 80%;
+        background-color: #F7F4EB;
+    }
+    &__inner{
+        position: relative;
+        z-index: 10;
+        display: flex;
+    }
+    &__inner-subtitle{
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 40px;
+    }
+    &__inner-title{
+        font-size: 48px;
+        line-height: 65px;
+        margin-bottom: 30px;
+    }
+    &__inner-text{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &__inner-info{
+        max-width: 500px;
+        width: 100%;
+        position: relative;
+        top: 115px;
+    }
+
+    &__form{
+        position: absolute;
+        right: 0px;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        max-width: 380px;
+        width: 100%;
+        padding: 30px 40px 20px 40px;
+        background-color: #1F2236;
+    }
+    &__form-title{
+        text-align: center;
+        font-size: 28px;
+        line-height: 38px;
+        @extend %os-bold;
+    }
+    &__form-text{
+        margin-bottom: 8px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 21px;
+        @extend %arial-regular;
+    }
+    &__label{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+        @extend %arial-regular;
+    }
+    &__input{
+        outline: none;
+        font-size: 13px;
+        line-height: 15px;
+        @extend %arial-regular;
+        max-width: 300px;
+        width: 100%;
+        height: 35px;
+        margin-bottom: 12px;
+        
+    }
+    &__btn{
+        max-width: 300px;
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+        line-height: 15px;
+        @extend %arial-regular;
+        margin: 12px 0px 15px;
+    }
+    &__check{
+        font-size: 13px;
+        line-height: 15px;
+        @extend %arial-regular;
+        display: flex;
+        align-items: center;
+
+        
+    input{
+        margin-right: 3px;
+    }             
+    }
+}
+
+.info{
+    position: relative;
+    padding-top: 60px;
+    &__btn{
+        max-width: 200px;
+        width: 100%;
+        margin-left: 10px;
+       
+    }
+    &__inner{
+        background-color: #1F2236;
+        position: relative;
+        color: #fff;
+        border-radius: 7px;
+        &::after{
+            content: url("../images/memorial-info.png");
+            right: -25px;
+            top: -47px;
+            position: absolute;
+            overflow: hidden;
+            
+           
+        }
+    }
+    &__wrapper{
+        max-width: 900px;
+        width: 100%;
+        padding:35px 0px 35px 85px;
+
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 43px;
+        margin-bottom: 18px;
+    }
+    &__text{
+        display: inline-block;
+        max-width: 540px;
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 33px;
+        a{
+            text-decoration: underline;
+        }
+        &:nth-child(3){
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.default__btn-2{
+    display: inline-block;
+    outline: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 2px solid #CEA54B;
+    padding: 9px;
+    color: #CEA54B;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+@import "_media";
