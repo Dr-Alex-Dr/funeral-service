@@ -9,9 +9,11 @@ html{
 a{
     text-decoration: none;
     color: inherit;
+    font-weight: inherit;
     
 }
 p{
+    font-weight: inherit;
     margin: 0;
 }
 button{
@@ -32,6 +34,7 @@ h5,
 h6{
     margin: 0;
     font-size: inherit;
+    font-weight: inherit;
 }
 
 .container{

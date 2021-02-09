@@ -4,21 +4,27 @@
 // common
 @import "common/_fonts";
 @import "common/_global";
-@import "common/_libs";
 @import "common/_vars";
 
 // header
 @import "layout/header";
-// buttons
-@import "components/buttons.scss";
 
 // pages
 @import "pages/about";
 @import "pages/info";
+@import "pages/service";
+@import "pages/price";
+@import "pages/goods";
+@import "pages/benefit";
+@import "pages/agency";
 
-// forms
+// components
 @import "components/request";
-
+@import "components/buttons";
+@import "components/service_block";
+@import "components/price__box";
+@import "components/goods_block";
 
 // media
-@import "common/_media";
+@import "pages/media/pages-media";
+@import "layout/media/layout-media";
