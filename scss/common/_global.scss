@@ -1,0 +1,55 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    
+}
+p{
+    font-weight: inherit;
+    margin: 0;
+}
+button{
+    border: none;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.container{
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    line-height: 19px;
+    @extend %os-regular;      
+}
