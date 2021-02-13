@@ -1,0 +1,139 @@
+.footer{
+    position: relative;
+    background-color: #1F2236;
+    &__inner{
+        padding: 65px 0px 10px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    &__block-1{
+        max-width: 380px;
+        width: 100%;
+    }
+    &__block-2{
+        max-width: 180px;
+        width: 100%;
+    }
+    &__block-3{
+        max-width: 210px;
+        width: 100%;
+    }
+    &__block-4{
+        max-width: 240px;
+        width: 100%;
+    }
+    &__logo{
+        display: flex;
+        color: #fff;
+        align-items: center;
+    }
+    &__content-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    &__logo-title{
+        font-size: 24px;
+        line-height: 33px;
+    }
+    &__logo-text{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    &__emblem{
+        display: flex;
+        width: 280px;
+        align-items: center;
+        margin-top: 230px;
+        padding-bottom: 15px;
+    }
+    &__emblem-text{
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 15px;
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 24px;
+        margin: 15px 0px 10px;
+    }
+    &__subtitle{
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+    &__copyright{
+        font-size: 14px;
+        line-height: 19px;
+        width: 250px;
+    }
+    &__item{
+        display: block;
+        & + .footer__item{
+            margin-top: 15px;
+        }
+    }
+    &__item-link{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &__info-phone{
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 15px;
+        position: relative;
+        &::before{
+            content: "\e942";
+            font-family: 'icomoon';
+            position: absolute;
+        }
+    }
+    &__link-item{
+        position: relative;
+        a + a{
+            margin-left: 15px;
+        }
+        a::after{
+            font-family: 'icomoon';
+            font-size: 22px;
+            color: #fff;
+        }
+        &::before{
+            content: "";
+            background-image: url('/../../images/icon-2.png');
+            background-position: 0 0;
+            background-size: cover;
+            position: absolute;
+            width: 17px;
+            height: 21px;
+            top: -1px;
+            left: 23px;
+        }
+    }
+    &__items-link-1{
+        &::after{ 
+            content: "\ea90";  
+        }
+    }
+    &__items-link-2{
+        &::after{
+            content: "";   
+        }
+    }
+    &__items-link-3{
+        &::after{
+            content: "\ea92";    
+        }
+    }
+    &__items-link-4{
+        &::after{
+            content: "\ea95";      
+        }
+    }
+    &__items-link-5{
+        &::after{
+            content: "\ea98";     
+        }
+    }
+}

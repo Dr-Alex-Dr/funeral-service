@@ -1,5 +1,5 @@
 @import "../../node_modules/normalize.css/normalize";
-// @import "../../node_modules/slick-carousel/slick/slick";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
 
 // common
 @import "common/_fonts";
@@ -8,6 +8,14 @@
 
 // header
 @import "layout/header";
+@import "layout/footer";
+
+// components
+@import "components/request";
+@import "components/buttons";
+@import "components/service_block";
+@import "components/price__box";
+@import "components/goods_block";
 
 // pages
 @import "pages/about";
@@ -17,13 +25,11 @@
 @import "pages/goods";
 @import "pages/benefit";
 @import "pages/agency";
-
-// components
-@import "components/request";
-@import "components/buttons";
-@import "components/service_block";
-@import "components/price__box";
-@import "components/goods_block";
+@import "pages/features";
+@import "pages/reviews";
+@import "pages/questions";
+@import "pages/news";
+@import "pages/contacts";
 
 // media
 @import "pages/media/pages-media";

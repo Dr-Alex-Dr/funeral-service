@@ -12,3 +12,19 @@ btn.onclick = function(){
 		index -= 1;
 	}
 }
+
+$(function(){
+
+    $('.reviews__slider').slick({
+		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
+        nextArrow: '<button class="slider__btn slider__btn-right"></button>',
+		slidesToShow: 3,
+		slidesToScroll: 1
+    });
+
+	$('.questions__item-title').on('click', function(){
+        $('.questions__item').removeClass('questions__item--active');
+        $(this).parent().addClass('questions__item--active');
+    });
+});
+

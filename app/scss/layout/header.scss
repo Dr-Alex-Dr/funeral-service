@@ -10,6 +10,11 @@
     &__info-location{
         margin-right: 40px;
     }
+    &__info-phone{
+        a{
+            text-decoration: underline;
+        }
+    }
     &__info-wrapper{
         display: flex;
     }
