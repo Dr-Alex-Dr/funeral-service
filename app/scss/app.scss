@@ -6,7 +6,7 @@
 @import "common/_global";
 @import "common/_vars";
 
-// header
+// layout
 @import "layout/header";
 @import "layout/footer";
 
@@ -16,6 +16,8 @@
 @import "components/service_block";
 @import "components/price__box";
 @import "components/goods_block";
+@import "components/questions-form";
+@import "components/social-network";
 
 // pages
 @import "pages/about";

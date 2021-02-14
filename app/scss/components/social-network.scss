@@ -1,0 +1,45 @@
+.social{
+    &__items{
+        a + a{
+            margin-left: 15px;
+        }
+        a::after{
+            font-family: 'icomoon';
+            font-size: 22px;
+        }
+        &::before{
+            content: "";
+            cursor: pointer;
+            background-position: 0 0;
+            background-size: cover;
+            position: absolute;
+            width: 17px;
+            height: 21px;
+        }
+    }
+    &-1{
+        &::after{ 
+            content: "\ea90";  
+        }
+    }
+    &-2{
+        &::after{ 
+            content: "";  
+        }
+    }
+    &-3{
+        &::after{ 
+            content: "\ea92";   
+        }
+    }
+    &-4{
+        &::after{ 
+            content: "\ea95";  
+        }
+    }
+    &-5{
+        &::after{ 
+            content: "\ea98";  
+        }
+    }
+}
