@@ -15,10 +15,22 @@ btn.onclick = function(){
 
 $(function(){
 
-    $('.reviews__slider').slick({
+    $('.reviews__large').slick({
 		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
         nextArrow: '<button class="slider__btn slider__btn-right"></button>',
 		slidesToShow: 3,
+		slidesToScroll: 1
+    });
+	$('.reviews__medium').slick({
+		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
+        nextArrow: '<button class="slider__btn slider__btn-right"></button>',
+		slidesToShow: 2,
+		slidesToScroll: 1
+    });
+	$('.reviews__little').slick({
+		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
+        nextArrow: '<button class="slider__btn slider__btn-right"></button>',
+		slidesToShow: 1,
 		slidesToScroll: 1
     });
 
