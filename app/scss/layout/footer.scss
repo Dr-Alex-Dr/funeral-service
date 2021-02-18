@@ -7,6 +7,7 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
+        flex-wrap: wrap;
     }
     &__block-1{
         max-width: 380px;
@@ -46,7 +47,8 @@
     &__emblem{
         text-align: left;
         display: flex;
-        width: 280px;
+        max-width: 280px;
+        width: 100%;
         align-items: center;
         margin-top: 190px;
     }

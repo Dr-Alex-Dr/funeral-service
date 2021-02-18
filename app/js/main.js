@@ -14,7 +14,7 @@ btn.onclick = function(){
 }
 
 $(function(){
-
+	
     $('.reviews__large').slick({
 		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
         nextArrow: '<button class="slider__btn slider__btn-right"></button>',
