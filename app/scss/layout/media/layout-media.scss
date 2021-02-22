@@ -335,14 +335,17 @@
             flex-wrap: wrap;
         }
     }
-    .social__items{
-        &::before{
-            width: 15px;
-            height: 18px;
+    .social{
+        &__items{
+            a{
+                &::after{
+                    font-size: 18px;
+                }
+            }
         }
-        a{
-            &::after{
-                font-size: 18px;
+        &-2{
+            svg{
+                height: 20px;
             }
         }
     } 
