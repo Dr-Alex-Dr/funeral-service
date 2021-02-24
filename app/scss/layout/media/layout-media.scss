@@ -31,11 +31,6 @@
         line-height: 20px;
     }
 
-    body{
-        font-size: 12px;
-        line-height: 17px;
-    }
-
     .header
     {
         &__logo-title{
@@ -108,10 +103,7 @@
 }
 
 @media (max-width: 850px){
-    body{
-        font-size: 10px;
-        line-height: 16px;
-    }
+
     .header
     {
         &__contact-phone::before{
@@ -230,15 +222,7 @@
     }
 }
 @media (max-width: 680px){
-    .social{
-        &__item{
-            a{
-                &::after{
-                    font-size: 20px;
-                }
-            }
-        }
-    }
+
     .footer{
         &__info-phone{
             font-size: 21px;
@@ -311,9 +295,6 @@
     }
 }
 
-@media (max-width: 500px){
- 
-}
 @media (max-width: 485px){
     .footer{
         &__info-phone{
@@ -335,20 +316,6 @@
             flex-wrap: wrap;
         }
     }
-    .social{
-        &__items{
-            a{
-                &::after{
-                    font-size: 18px;
-                }
-            }
-        }
-        &-2{
-            svg{
-                height: 20px;
-            }
-        }
-    } 
 }
 
 @media (max-width: 480px){
@@ -376,11 +343,6 @@
  
 }
 
-@media (max-width: 420px){
-    .about {
-        min-height: 840px;
-    }
-}
 @media (max-width: 385px){
     .footer{
         &__link-item{
@@ -394,32 +356,6 @@
 
 @media (max-width: 350px){
 
-    .about{
-        &__inner-info{
-            top: 55px;
-        }
-        &__inner-title{
-            font-size: 29px;
-        }
-        &__form-title{
-            font-size: 25px;
-            line-height: 38px;
-        }
-        &__form-text{
-            font-size: 15px;
-            line-height: 21px;       
-        }
-        &__label{
-            font-size: 14px;
-        }
-        &__input{
-            height: 30px;
-        }
-        &__btn{
-            height: 30px;
-            margin: 0px 0px 15px;
-        }
-    }
     .footer{
         &__text{
             font-size: 15px;

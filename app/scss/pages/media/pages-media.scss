@@ -4,7 +4,7 @@
             position: relative;
             &::after{
                 content: '';
-                background-image: url('');
+                background-image: none;
                 width: 0px;
                 height: 0px;
                 position: absolute;
@@ -137,7 +137,7 @@
     }
 }
 
-@media (max-width: 1038px){
+@media (max-width: 1040px){
     .contacts{
         &__wrapper{
             ymaps{
@@ -179,6 +179,10 @@
         &__wrapper-text{
             margin-right: 0px;
         }
+    }
+    body{
+        font-size: 12px;
+        line-height: 17px;
     }
 }
 
@@ -253,6 +257,10 @@
         &__inner {
             max-width: 460px;
         }
+    }
+    body{
+        font-size: 10px;
+        line-height: 16px;
     }
 }
 

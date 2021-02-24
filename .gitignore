@@ -1,1 +1,4 @@
 node_modules/
+app/css/components/
+app/css/layout/
+app/css/pages/

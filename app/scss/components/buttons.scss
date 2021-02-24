@@ -4,17 +4,29 @@
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    transition: .3s;
+    width: 100%;
+    &:hover{
+        background-color: #b98c2a;
+        transition: .3s;
+    }
 }
 
 .default__btn-2{
+    width: 100%;
     display: inline-block;
     outline: none;
     background-color: transparent;
     text-transform: uppercase;
     border: 2px solid #CEA54B;
-    padding: 9px;
     color: #CEA54B;
     border-radius: 5px;
     font-size: 15px;
-    line-height: 18px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        border-color: #b98c2a;
+        color: #b98c2a;
+        transition: .3s;
+    }
 }

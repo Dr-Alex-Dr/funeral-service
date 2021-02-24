@@ -23,9 +23,9 @@
         }
     }
     &-2{
-        margin-left: 10px !important;
-        position: relative;
-        top: 1px;
+        &::after{
+            content: "\e900";
+        }
     }
     &-3{
         &::after{ 
@@ -39,7 +39,7 @@
     }
     &-5{
         &::after{ 
-            content: "\ea98";  
+            content: "\e901";  
         }
     }
 }
