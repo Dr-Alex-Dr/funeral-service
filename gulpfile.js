@@ -1,13 +1,17 @@
 let gulp = require('gulp'),
     sass = require('gulp-sass'),
+    jquery = require('jquery'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename')
+
+    
 
 
 gulp.task('scss', function(){
-    return gulp.src('app/scss/**/*.scss')
+    return gulp.src([
+        'app/scss/**/*.scss'])
       .pipe(sass({outputStyle: 'compressed'}))
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('app/css'))

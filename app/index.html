@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/39e28caab8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -14,9 +15,7 @@
         <div class="header__info">
             <div class="container">
                 <div class="header__inner">
-                    <p class="header__info-phone">Для получения помощи и консультации звоните:<a href="tel:88122093445">
-                            8
-                            (812) 209-34-45 </a></p>
+                    <p class="header__info-phone">Для получения помощи и консультации звоните: <a href="tel:88122093445" class="text-white"> 8(812) 209-34-45 </a></p>
                     <div class="header__info-wrapper">
                         <p class="header__info-location">Адрес: Санкт-Петербург, Лиговский пр. д.24</p>
                         <p class="header__info-schedule">Ежедневно с 9.00 до 20.00</p>
@@ -27,7 +26,7 @@
         <div class="header__content">
             <div class="container">
                 <div class="header__inner-content">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo text-decoration-none" href="#">
                         <img src="images/logo.png" width="90px" height="80px" alt="">
                         <div class="header__content-wrapper">
                             <h2 class="header__logo-title">"СОДЕЙСТВИЕ"</h2>
@@ -42,8 +41,8 @@
                     </div>
                     <div class="header__contact">
                         <div class="header__content-wrapper">
-                            <a class="header__contact-phone" href="tel:88122093445">8 (812) 209-34-45</a>
-                            <a class="header__contact-text" href="tel:88122093445">Заказ обратного звонка</a>
+                            <a class="header__contact-phone text-decoration-none" href="tel:88122093445">8 (812) 209-34-45</a>
+                            <a class="header__contact-text text-decoration-none" href="tel:88122093445">Заказ обратного звонка</a>
                         </div>
                         <button class="header__btn default__btn-1">Вызвать агента</button>
                     </div>
@@ -68,28 +67,28 @@
 
     <section class="about">
         <div class="container">
-            <div class="about__inner">
-                <div class="about__inner-info">
-                    <h3 class="about__inner-subtitle">"СОДЕЙСТВИЕ"</h3>
-                    <h2 class="about__inner-title">Ритуальные услуги в Санкт-Петербурге</h2>
-                    <p class="about__inner-text">Помощь в трудную минуту без навязаных услуг и завышенных цен.</p>
+            <div class="about__inner row gx-0" >
+                <div class="col-5 mt-5">
+                    <h3 class="about__inner-subtitle mb-4">"СОДЕЙСТВИЕ"</h3>
+                    <h2 class="about__inner-title mb-4">Ритуальные услуги в Санкт-Петербурге</h2>
+                    <p class="section-text">Помощь в трудную минуту без навязаных услуг и завышенных цен.</p>
                 </div>
-                <form action="" class="about__form request__form">
-                    <h2 class="about__form-title request__form-title">Оставьте заявку</h2>
-                    <p class="about__form-text request__form-text">Специалист расскажет,
+                <form action="" class="request__form col ms-auto">
+                    <h2 class="request__form-title">Оставьте заявку</h2>
+                    <p class="request__form-text">Специалист расскажет,
                         как организовать похороны</p>
-                    <label for="" class="about__label request__label">Имя:</label>
-                    <input type="text" class="about__input request__input">
-                    <label for="" class="about__label request__label">Телефон:</label>
-                    <input type="text" placeholder="+7" class="about__input request__input">
-                    <button type="submit" class="about__btn request__btn default__btn-1">ОТПРАВИТЬ</button>
-                    <p class="about__check request__check"><input type="checkbox">Согласен с политикой
+                    <label for="" class="request__label">Имя:</label>
+                    <input type="text" class=" request__input">
+                    <label for="" class="request__label">Телефон:</label>
+                    <input type="text" placeholder="+7" class="request__input">
+                    <button type="submit" class="request__btn default__btn-1">ОТПРАВИТЬ</button>
+                    <p class="request__check"><input type="checkbox">Согласен с политикой
                         конфеденциальности</p>
                 </form>
             </div>
         </div>
     </section>
-
+<!-- 
     <section class="info">
         <div class="container">
             <div class="info__inner">
@@ -108,8 +107,8 @@
     <section class="service">
         <div class="container">
             <div class="service__inner">
-                <h2 class="service__title">Оказываем весь спектр ритуальных услуг</h2>
-                <p class="service__text">Мы берём на себя решение всех вопросов. От юридических до финансовых.</p>
+                <h2 class="section-title mb-12">Оказываем весь спектр ритуальных услуг</h2>
+                <p class="section__text mb-35">Мы берём на себя решение всех вопросов. От юридических до финансовых.</p>
                 <div class="service__box">
                     <div class="service__box-item">
                         <h2 class="service__box-title">Организация похорон</h2>
@@ -330,12 +329,12 @@
         <div class="container">
             <div class="benefit__inner">
                 <div class="benefit__wrapper">
-                    <h2 class="benefit__title">Поможем организовать достойные похороны за 0 р. при поддержке
+                    <h2 class="section-title white-text">Поможем организовать достойные похороны за 0 р. при поддержке
                         государства!</h2>
-                    <p class="benefit__text">Для компенсации расходов при захоронении выплачивается пособие на
+                    <p class="section-text white-text">Для компенсации расходов при захоронении выплачивается пособие на
                         погребение. Гарантированный его размер определяется на федеральном уровне. Кроме того, есть
                         региональные и социальные выплаты и льготы, которые возмещают затраты при похоронах.</p>
-                    <h2 class="benefit__subtitle">Звоните : <a href="tel:88122093445">8 (812) 209-34-45</a></h2>
+                    <h2 class="section-subtitle white-text">Звоните : <a href="tel:88122093445">8 (812) 209-34-45</a></h2>
                 </div>
                 <form action="" class="benefit__form request__form ">
                     <h2 class="benefit__form-title request__form-title">Получите консультацию специалиста по льготам
@@ -652,7 +651,8 @@
                 <a  class="footer__privacy-policy" href="">Политика конфеденциальности</a>
             </div>
         </div>
-    </footer> 
+    </footer>  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

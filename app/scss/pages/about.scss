@@ -1,11 +1,11 @@
 @import "../common/_fonts";
+@import "../common/_vars";
+
 .about{
     min-height: 600px;
     position: relative;
     background-image: url('../images/about-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @extend %section-img;
     color: #333333;
 
     &::after{
@@ -21,27 +21,14 @@
     &__inner{
         position: relative;
         z-index: 10;
-        display: flex;
+        padding-top: 100px;
     }
     &__inner-subtitle{
-        font-size: 24px;
-        line-height: 33px;
-        margin-bottom: 25px;
+        font-size: 1.5em;
+        line-height: 2rem;
     }
     &__inner-title{
-        font-size: 48px;
-        line-height: 65px;
-        margin-bottom: 30px;
+        font-size: 3em;
+        line-height: 4rem;
     }
-    &__inner-text{
-        font-size: 18px;
-        line-height: 24px;
-    }
-    &__inner-info{
-        max-width: 500px;
-        width: 100%;
-        position: relative;
-        top: 115px;
-    }
-
 }

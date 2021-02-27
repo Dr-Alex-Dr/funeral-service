@@ -15,6 +15,8 @@ a{
 p{
     font-weight: inherit;
     margin: 0;
+    margin-bottom: 0;
+
 }
 button{
     border: none;
@@ -49,7 +51,7 @@ body{
     overflow-x: hidden;
     position: relative;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
     @extend %os-regular;      
 }
