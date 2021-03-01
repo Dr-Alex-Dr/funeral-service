@@ -1,11 +1,7 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 
-// common
-@import "common/_fonts";
-@import "common/_global";
-@import "common/_vars";
-@import "common/_typography";
+
 
 // layout
 @import "layout/header";
@@ -19,6 +15,12 @@
 @import "components/goods_block";
 @import "components/questions-form";
 @import "components/social-network";
+
+// common
+@import "common/_fonts";
+@import "common/_global";
+@import "common/_vars";
+@import "common/_typography";
 
 // pages
 @import "pages/about";

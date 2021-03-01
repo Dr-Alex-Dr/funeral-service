@@ -1,7 +1,7 @@
 @import "../common/_vars";
 
 .service{
-    &__box-item{
+    &__box-item{  
         max-width: 380px;
         width: 100%;
         border-radius: 7px;
@@ -10,26 +10,23 @@
         padding: 12px 35px 5px 35px;
         text-align: center;
         transition: .2s all;
-        &:nth-child(3n+1){
-            margin-left: 0px;
-        }
         &:hover{
             box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
             transition: .2s all;
         }   
     }
     &__box-title{
-        font-size: 24px;
-        list-style: 33px;
+        font-size: 1.5rem;
+        list-style: 2rem;
         color: #CEA54B;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
         @extend %os-bold;   
     }
     &__box-text{
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
         color: #000;
-        margin-bottom: 12px;
+        margin-bottom: 1rem;
     }
 }
 

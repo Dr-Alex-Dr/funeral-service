@@ -1,52 +1,18 @@
 @import "../common/_fonts";
 @import "../common/_vars";
 .price{
-    padding: 60px 0px 70px;
+    padding: 60px 0px 100px;
     background-color: #1F2236;
-    position: relative;
-    &__title{
-        font-size: 32px;
-        line-height: 43px;
-        color: #CEA54B;
-        @extend %os-regular;
-    }
-    &__text{
-        font-size: 18px;
-        line-height: 24px;
-        color: #fff;
-        @extend %os-regular;
-    }
     &__solutions{
-        margin-bottom: 20px;
-    }
-    &__solutions-inner{
         max-width: 780px;
         width: 100%;
         margin: 0 auto;
-    }
-    &__solutions-title{
-        margin-bottom: 15px;
-    }
-    &__solutions-text{
-        margin-bottom: 12px;
     }
     &__wrapper{
         max-width: 715px;
         width: 100%;
         text-align: center;
         margin: 0 auto;
-    }
-    &__funeral-title{
-        margin-bottom: 6px;
-    }
-    &__funeral-text{
-        margin-bottom: 20px;
-    }
-    &__cremation-title{
-        margin-bottom: 5px;
-    }
-    &__cremation-text{
-        margin-bottom: 20px;
     }
     &__decor-item-1{
         position: relative;
@@ -81,8 +47,8 @@
             width: 256px;
             height: 560px;
             background-size: cover;
-            top: 40px;
-            left: 1157px;
+            top: 30px;
+            left: 1160px;
             position: absolute;
         }
     }
