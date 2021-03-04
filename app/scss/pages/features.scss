@@ -6,29 +6,11 @@
         padding: 60px 0px 110px;
         text-align: center;
     }
-    &__title{
-        font-size: 32px;
-        line-height: 43px;
-        color: #000;
-        margin-bottom: 25px;
-        text-align: center;
-    }
     &__box-item{
         max-width: 280px;
         width: 100%;
         text-align: center;
         display: inline-block;
     }
-    &__box-title{
-        font-size: 18px;
-        line-height: 24px;
-        color: #333;
-        margin: 8px 0px 15px;
-        @extend %os-bold;
-    }
-    &__box-text{
-        font-size: 14px;
-        line-height: 19px;
-        color: #333;
-    }
+   
 }

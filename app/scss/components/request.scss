@@ -8,7 +8,7 @@
         top: 100px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         color: #fff;
         max-width: 380px;
         width: 100%;
@@ -29,6 +29,7 @@
         @extend %arial-regular;
     }
     &__label{
+        margin-right: auto;
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 10px;
@@ -65,5 +66,34 @@
     input{
         margin-right: 3px;
     }             
+    }
+}
+
+@media (max-width: 576px){
+    .request{
+        &__form-title{
+            font-size: 25px;
+            line-height: 35px;
+        }
+        &__form-text{
+            font-size: 16px;
+        }
+        &__label{
+            font-size: 13px;
+        }
+        &__check{
+            font-size: 12px;
+        }
+        &__btn{
+            height: 35px;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .request{
+        &__form{
+            padding: 30px 10px 20px 10px;
+        }
     }
 }

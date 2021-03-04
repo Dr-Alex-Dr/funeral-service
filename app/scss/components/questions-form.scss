@@ -22,9 +22,6 @@
     }
     &__item-title{
         position: relative;
-        font-size: 18px;
-        line-height: 24px;
-        color: #333;
         &::before{
             content: "";
             position: absolute;
@@ -46,16 +43,16 @@
             height: 21px;
             top: 15px;
             left: -60px;
-
         }
     }
     &__item-text{
         padding-top: 15px;
         margin-top: 15px;
         border-top: 1px solid #797979;;
-        font-size: 18px;
-        line-height: 24px;
-        color: #333;
         display: none;
     }
+}
+
+@media (max-width: 576px){
+    
 }

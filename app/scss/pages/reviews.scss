@@ -1,29 +1,16 @@
 @import "../common/_vars";
 .reviews{
-    position: relative;
     background-color: #1F2236;
     &__inner{
         padding: 45px 40px 30px;
         text-align: center;
-        position: relative;
     }
-    &__title{
-        font-size: 32px;
-        line-height: 43px;
-        color: #CEA54B;
-        text-align: center;
-        margin-bottom: 35px;
-    }
-    &__btn{
+    &__btn{    
         max-width: 200px;
+        width: 100%;
         height: 36px;
         margin: 0 auto;
     }
-    &__slider{
-        margin-bottom: 55px;
-        margin: 0 auto 55px;
-    }
-
     &__slider-item{
         background-color: #F7F4EB;
         max-width: 350px;
@@ -41,8 +28,7 @@
         display: inline-block;   
         top: -50px;
         left: 100px;
-        position: relative;
-     
+        position: relative;  
     }
     &__slider-text{
         font-size: 16px;
@@ -52,13 +38,6 @@
         span{
             letter-spacing: 4px;
         }
-    }
-   
-    &__medium{
-        display: none;
-    }
-    &__little{
-        display: none;
     }
 }
 

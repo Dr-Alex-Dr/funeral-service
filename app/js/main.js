@@ -15,23 +15,28 @@ btn.onclick = function(){
 
 $(function(){
 	
-    $('.reviews__large').slick({
+    $('.reviews__slider').slick({
 		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
         nextArrow: '<button class="slider__btn slider__btn-right"></button>',
 		slidesToShow: 3,
-		slidesToScroll: 1
-    });
-	$('.reviews__medium').slick({
-		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
-        nextArrow: '<button class="slider__btn slider__btn-right"></button>',
-		slidesToShow: 2,
-		slidesToScroll: 1
-    });
-	$('.reviews__little').slick({
-		prevArrow: '<button class="slider__btn slider__btn-left"></button>',
-        nextArrow: '<button class="slider__btn slider__btn-right"></button>',
-		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+			  }
+			},
+			{
+				breakpoint: 850,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+			  }
+			}
+
+		]
     });
 
 	$('.questions__item-title').on('click', function(){

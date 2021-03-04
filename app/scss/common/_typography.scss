@@ -1,3 +1,7 @@
+.section-text-sm{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
 .section-text{
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -16,11 +20,23 @@
 .white-text{
     color: #fff;
 }
+.grey-text{
+    color: #333;
+}
 .yellow-text{
     color: #CEA54B;
 }
-.section-padding{
-    
+.section-indent{
+    text-indent: 3em;
+}
+.section-italic{
+    font-style: italic;
+}
+.os-bold{
+    @extend %os-bold;
+}
+.os-regular{
+    @extend %os-regular;
 }
 
           

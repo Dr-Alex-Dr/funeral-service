@@ -1,21 +1,10 @@
 @import "../common/_vars";
 .agency{
-    position: relative;
     &__inner{
-        padding: 65px 0px 65px;
-        
+        padding: 65px 0px 65px;    
     }
-    &__title{
-        font-size: 32px;
-        line-height: 43px;
-        color: #000;
-        text-align: center;
-        margin-bottom: 45px;
-    }
-    &__wrapper{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 70px;
+    &__wrapper{   
+        margin-bottom: 4rem !important;
         position: relative;
         &::after{
             content: "";
@@ -29,30 +18,9 @@
             right: 140px;
         }
     }
-    &__wrapper-text{
-        display: block;
-        max-width: 600px;
+    &__img{
+        max-width: 480px;
         width: 100%;
-        margin-right: 80px;
-        li{
-            margin-left: 25px;
-        }
-        p{
-            text-indent: 0em;
-        }
-    }
-    &__subtitle{
-        font-size: 18px;
-        line-height: 24px;
-        color: #000;
-        @extend %os-bold;
-        margin-bottom: 20px;
-    }
-    &__text{
-        font-size: 18px;
-        line-height: 24px;
-        color: #000;
-        @extend %os-regular;
-        text-indent: 3em;
+        height: auto;   
     }
 }
