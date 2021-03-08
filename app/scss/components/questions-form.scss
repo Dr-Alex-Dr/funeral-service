@@ -53,6 +53,18 @@
     }
 }
 
-@media (max-width: 576px){
-    
+@media (max-width: 768px){
+    .questions{
+        &__item{
+            padding: 25px 10px 10px 50px;
+        }
+        &__item-title{
+            &::after{
+                left: -36px;
+            }
+            &::before{
+                left: -32px;
+            }
+        }
+    }
 }

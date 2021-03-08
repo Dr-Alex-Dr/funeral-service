@@ -34,3 +34,31 @@
         height: 36px;   
     }
 }
+
+@media (max-width: 1250px){
+    .info{
+        &__inner{
+            &::after{
+                content: none;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .info{
+        &__wrapper{
+            padding: 35px 10px 35px 10px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .info{
+        &__title{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        &__text{
+            font-size: 1rem;
+        }
+    }
+}     

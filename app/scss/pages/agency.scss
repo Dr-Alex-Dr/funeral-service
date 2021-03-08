@@ -24,3 +24,28 @@
         height: auto;   
     }
 }
+
+@media (max-width: 1200px){
+    .agency{
+        &__wrapper{
+            &::after{
+                max-width: none;
+                right: 0;
+                top: 435px;
+            }
+        }
+        &__img{
+            max-width: 680px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .agency{
+        &__wrapper{
+            &::after{
+                content: none;
+            }
+        }
+    }
+}

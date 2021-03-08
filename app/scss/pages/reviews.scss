@@ -78,3 +78,31 @@
         }
     }
 }
+
+@media (max-width: 1200px){
+    .reviews{
+        &__inner{
+            max-width: 860px;
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 576px){
+    .slider{
+        &__btn-right,
+        &__btn-left{
+            display: none;
+            &::after{
+                content: none;
+            }
+        }
+    }
+    .reviews{
+        &__inner{
+            padding: 45px 0px 30px;
+        }
+        &__slider-text{
+            font-size: 14px;
+        }
+    }
+}

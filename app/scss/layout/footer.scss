@@ -2,33 +2,11 @@
     position: relative;
     background-color: #1F2236;
     &__inner{
-        position: relative;
         padding: 65px 0px 15px;
-        display: flex;
-        justify-content: space-between;
         color: #fff;
-        flex-wrap: wrap;
-    }
-    &__block-1{
-        max-width: 380px;
-        width: 100%;
-    }
-    &__block-2{
-        max-width: 180px;
-        width: 100%;
-    }
-    &__block-3{
-        max-width: 210px;
-        width: 100%;
-    }
-    &__block-4{
-        max-width: 240px;
-        width: 100%;
-        text-align: right;
     }
     &__logo{
         display: flex;
-        color: #fff;
         align-items: center;
     }
     &__content-wrapper{
@@ -44,33 +22,21 @@
         font-size: 14px;
         line-height: 19px;
     }
-    &__emblem{
-        text-align: left;
+    &__emblem{  
         display: flex;
         max-width: 280px;
         width: 100%;
-        align-items: center;
-        margin-top: 190px;
     }
     &__emblem-text{
         font-size: 14px;
         line-height: 19px;
         margin-left: 15px;
     }
-    &__text{
-        font-size: 18px;
-        line-height: 24px;
-        margin: 15px 0px 10px;
-    }
-    &__subtitle{
-        font-size: 24px;
-        line-height: 33px;
-        margin-bottom: 30px;
-    }
     &__copyright{
         font-size: 14px;
         line-height: 19px;
-        width: 250px;
+        max-width: 250px;
+        width: 100%;
     }
     &__item{
         display: block;
@@ -78,20 +44,18 @@
             margin-top: 15px;
         }
     }
-    &__item-link{
-        font-size: 18px;
-        line-height: 24px;
-    }
+
     &__info-phone{
-        font-size: 24px;
-        line-height: 33px;
+        font-size: 1.6rem;
+        line-height: 2rem;
         margin-bottom: 15px;
         position: relative;
         &::before{
             content: "\e942";
             font-family: 'icomoon';
             position: absolute;
-            left: 25px;
+            left: -30px;
+            top: -2px;
             font-size: 20px;
         }
     }
@@ -103,10 +67,8 @@
     }
 
     &__privacy-policy{
-        position: absolute;
         font-size: 14px;
         line-height: 19px;
-        color: #fff;
         text-decoration: underline;
         bottom: 12px;
         width: 100%;

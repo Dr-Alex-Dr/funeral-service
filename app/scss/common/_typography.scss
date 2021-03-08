@@ -10,16 +10,20 @@
 .section-title{
     font-size: 2rem;
     line-height: 2.7rem;
-    color: #000;
+    color: #000
 }
 .section-subtitle{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2rem; 
     color: #000;
 }
 .white-text{
-    color: #fff;
+    color: #fff;  
 }
+.black-text{
+    color: #000;  
+}
+
 .grey-text{
     color: #333;
 }
@@ -38,5 +42,21 @@
 .os-regular{
     @extend %os-regular;
 }
+
+@media (max-width: 576px){
+    .section-sm-text{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .section-sm-title{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .section-sm-subtitle{
+        font-size: 1.2rem;
+        line-height: 2rem; 
+    }
+}
+
 
           
