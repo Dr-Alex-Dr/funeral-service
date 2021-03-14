@@ -7,66 +7,13 @@
         min-height: 40px;
         color: #fff;
     }
-    &__inner{
-        display: flex;
-    }
-    &__info-location{
-        margin-right: 40px;
-    }
-    &__info-phone{
-        a{
-            text-decoration: underline;
-        }
-    }
-    &__info-wrapper{
-        display: flex;
-    }
-
-    &__content{
-        display: flex;
-        align-items: center;
-        padding: 5px 0px 5px;
-    }
-
     &__logo{
         display: flex;
         color: #000;
         align-items: center;
     }
-    &__content-wrapper{
-        display: flex;
-        flex-direction: column;
-        margin-left: 15px;
-    }
-    &__logo-title{
-        font-size: 24px;
-        line-height: 33px;
-    }
-    &__logo-text{
-        font-size: 14px;
-        line-height: 19px;
-    }
-
-    &__emblem{
-        display: flex;
-        width: 280px;
-        align-items: center;
-    }
-    &__emblem-text{
-        font-size: 14px;
-        line-height: 19px;
-        margin-left: 15px;
-    }
-
-    &__contact{
-        display: flex;
-        align-items: center;
-    }
     &__contact-phone{
-        font-size: 24px;
-        line-height: 33px;
         white-space: nowrap;
-        padding-left: 30px;
         position: relative;
         &::before{
             font-family: 'icomoon';
@@ -77,17 +24,9 @@
             top: -2px;
         }
     }
-    &__contact-text{
-        font-size: 14px;
-        line-height: 19px;
-        padding-left: 30px;
-        text-decoration: underline;
-        font-style: italic;
-    }
     &__btn{
         max-width: 170px;
         width: 100%;
-        height: 50px;
         min-height: 50px;
         font-size: 16px;
         line-height: 22px;
@@ -113,15 +52,23 @@
     &__list-item{
         display: inline-block;
         margin-left: 50px;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 1.1rem;
+        line-height: 2rem ;
         &:first-child{
             margin-left: 0px;
         }
 
     }
 }
-
+@media (max-width: 1200px){
+    .menu{
+        &__list-item{
+            margin-left: 40px;
+            font-size: 0.9rem;
+            line-height: 2rem ;  
+        }
+    }
+}
 @media (max-width: 768px){
     .menu{
         height: auto;
@@ -158,6 +105,14 @@
             cursor: pointer;
             top: 22px;
 
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .header__contact-phone{
+        &::before{
+            content: none;
         }
     }
 }
