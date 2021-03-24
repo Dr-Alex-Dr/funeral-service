@@ -1,0 +1,23 @@
+@import "../../common/_fonts";
+@import "../../common/_vars";
+
+.catalog{
+    background-color: #1F2236;
+
+    &-text{
+        max-width: 900px;
+        width: 100%;
+    }
+    &-item{
+        margin-bottom: 20px;
+        max-width: 280px;
+        width: 100%;
+        background-color: rgba(247, 244, 235, 1);
+        border-radius: 7px;
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: -1px;
+        }
+    }
+}

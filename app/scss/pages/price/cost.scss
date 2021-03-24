@@ -1,0 +1,33 @@
+@import "../../common/_fonts";
+@import "../../common/_vars";
+
+.cost{
+    min-height: 500px;
+    position: relative;
+    background-image: url('../../../images/cost-bg.jpg');
+    @extend %section-img;
+    color: #333333;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+       
+        background-color: rgba(31, 34, 54, 0.901960784313726);
+        z-index: 1;
+    }
+    &__form{
+        background-color: rgba(247, 244, 235, 1);
+        padding: 20px 20px 30px 20px;
+        max-width: 350px;
+    }
+    &__inner{
+        padding-top: 80px;
+    }
+    &__input{
+        border: 1px solid #CEA54B;
+    }
+}

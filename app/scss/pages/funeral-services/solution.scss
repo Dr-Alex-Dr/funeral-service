@@ -1,0 +1,42 @@
+@import "../../common/_fonts";
+@import "../../common/_vars";
+
+.solution{
+    min-height: 500px;
+    position: relative;
+    background-image: url('../images/about-bg-1.jpg');
+    @extend %section-img;
+    color: #333333;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 80%;
+        background-color: #F7F4EB;
+        z-index: 1;
+    }
+    &__wrapper{
+        padding-top: 150px;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    &-title{
+        font-size: 2.8rem;
+        line-height: 2.7rem;
+        color: #1F2236;
+    }
+}
+
+@media (max-width: 768px){
+    .solution{
+        &-title{
+            font-size: 2.3rem;
+            line-height: 2.5rem;
+        }
+    }
+}

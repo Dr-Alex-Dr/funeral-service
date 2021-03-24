@@ -1,0 +1,19 @@
+@import "../../common/_fonts";
+@import "../../common/_vars";
+
+.information{
+    &-img{
+        max-width: 380px;
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 992px){
+    .information{
+        &-img{
+            max-width: 500px;
+        }
+    }
+}

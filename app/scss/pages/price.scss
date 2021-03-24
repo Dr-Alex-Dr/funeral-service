@@ -41,6 +41,9 @@
             left: -30px;
             position: absolute;
         }
+    }
+    &__decor-item-3{
+        position: relative;
         &::after{
             content: '';
             background-image: url('../../images/price-item-2.png');
@@ -48,7 +51,7 @@
             height: 560px;
             background-size: cover;
             top: 30px;
-            left: 1160px;
+            left: 360px;
             position: absolute;
         }
     }
