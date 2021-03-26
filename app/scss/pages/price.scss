@@ -59,7 +59,7 @@
 
 @media (max-width: 1660px){
     .price{
-        &__decor-item-2{
+        &__decor-item-3{
             &::after,
             &::before{
                 content: none;
@@ -70,6 +70,11 @@
 @media (max-width: 1270px){
     .price{
         &__decor-item-1{
+            &::before{
+                content: none;
+            }
+        }
+        &__decor-item-2{
             &::before{
                 content: none;
             }

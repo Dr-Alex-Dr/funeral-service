@@ -49,9 +49,24 @@
         display: inline-block;
         margin-left: 50px;
         font-size: 1.1rem;
-        line-height: 2rem ;
+        line-height: 2rem;
+        position: relative;
         &:first-child{
             margin-left: 0px;
+        }
+        &::before{
+            content: '●';
+            position: absolute;
+            left: -22px;
+            font-size: 12px;
+        }
+        &:nth-child(7){
+            &::after{
+                content: '●';
+                position: absolute;
+                font-size: 12px;
+                right: -23px;
+            }
         }
 
     }
@@ -69,6 +84,14 @@
     .menu{
         &__list-item{
             margin-left: 30px;
+            &::before{
+                content: none;
+            }
+            &:nth-child(7){
+                &::after{
+                    content: none;
+                }
+            }
         }
     }
 }
@@ -92,6 +115,7 @@
         position: relative;
         &__list{
             position: absolute;
+            z-index: 5000;
             display: none;
             flex-direction: column;
             align-items: center;
@@ -121,6 +145,7 @@
             right: 15px;
             cursor: pointer;
             top: 22px;
+            z-index: 10000;
 
         }
     }
