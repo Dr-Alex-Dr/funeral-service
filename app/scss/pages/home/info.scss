@@ -1,0 +1,64 @@
+@import "../../common/_fonts";
+.info{
+    padding: 60px 0px 70px;
+    &__inner{
+        background-color: #1F2236;
+        position: relative;
+        color: #fff;
+        border-radius: 7px;
+        &::after{
+            content: url("../../../images/memorial-info.png");
+            right: -25px;
+            top: -47px;
+            position: absolute; 
+        }
+    }
+    &__wrapper{
+        max-width: 900px;
+        width: 100%;
+        padding: 35px 0px 35px 85px;
+    }
+    &__title{
+        font-size: 2em;
+        line-height: 2.7rem;
+        margin-bottom: 1.2rem;
+    }
+    &__text{
+        margin-bottom: 1rem;
+        font-size: 1.5em;
+        line-height: 2rem; 
+    }
+    &__btn{
+        max-width: 200px;
+        width: 100%;
+        height: 36px;   
+    }
+}
+
+@media (max-width: 1250px){
+    .info{
+        &__inner{
+            &::after{
+                content: none;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .info{
+        &__wrapper{
+            padding: 35px 10px 35px 10px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .info{
+        &__title{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        &__text{
+            font-size: 1rem;
+        }
+    }
+}     

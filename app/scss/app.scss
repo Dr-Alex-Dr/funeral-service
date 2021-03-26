@@ -22,27 +22,35 @@
 @import "common/_vars";
 @import "common/_typography";
 
-// pages
-@import "pages/about";
-@import "pages/info";
-@import "pages/service";
-@import "pages/price";
-@import "pages/goods";
-@import "pages/benefit";
-@import "pages/agency";
-@import "pages/features";
-@import "pages/reviews";
-@import "pages/questions";
-@import "pages/news";
-@import "pages/contacts";
+// home
+@import "pages/home/about";
+@import "pages/home/info";
+@import "pages/home/service";
+@import "pages/home/price";
+@import "pages/home/goods";
+@import "pages/home/benefit";
+@import "pages/home/agency";
+@import "pages/home/features";
+@import "pages/home/reviews";
+@import "pages/home/questions";
+@import "pages/home/news";
+@import "pages/home/contacts";
+    // reviews
+    @import "pages/home/reviews/work";
+
 //funeral services
 @import "pages/funeral-services/solution";
 @import "pages/funeral-services/catalog";
 @import "pages/funeral-services/information";
 //price
 @import "pages/price/cost";
-//questions 
-@import "pages/questions/ask";
-@import "pages/questions/answer";
+//helpful-information
+@import "pages/helpful-information/ask";
+@import "pages/helpful-information/answer";
+    // catalog
+    @import "pages/helpful-information/catalog/catalog";
+    @import "pages/helpful-information/catalog/list";
+
+    
 
 

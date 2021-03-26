@@ -1,0 +1,37 @@
+.contacts{
+    background-color: #F7F4EB;
+    &__inner{
+        padding: 60px 0px 60px;
+    }
+    &__btn{
+        font-size: 0.8rem;
+        max-width: 400px;
+        height: 32px;
+        width: 100%;
+        margin-bottom: 15px;
+        display: block;
+    }
+}
+@media (max-width: 576px){
+    .contacts{
+        &__mobile-map{
+            position: relative;
+            z-index: 30;
+            &::after{
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                z-index: 45;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .contacts{
+        &__btn{
+            font-size: 0.7rem;
+        }
+    } 
+}

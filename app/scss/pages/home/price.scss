@@ -1,0 +1,83 @@
+@import "../../common/_fonts";
+@import "../../common/_vars";
+.price{
+    padding: 60px 0px 100px;
+    background-color: #1F2236;
+    &__solutions{
+        max-width: 780px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        max-width: 715px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__decor-item-1{
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url('../../../images/price-item-1.png');
+            width: 80px;  
+            height: 200px;
+            background-size: cover;
+            transform: rotate(345deg);
+            top: -75px;
+            right: -20px;
+            position: absolute;
+        }
+    }
+    &__decor-item-2{
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url('../../../images/price-item-1.png');
+            width: 80px;  
+            height: 200px;
+            background-size: cover;
+            transform: rotate(15deg);
+            top: -60px;
+            left: -30px;
+            position: absolute;
+        }
+    }
+    &__decor-item-3{
+        position: relative;
+        &::after{
+            content: '';
+            background-image: url('../../../images/price-item-2.png');
+            width: 256px;
+            height: 560px;
+            background-size: cover;
+            top: 30px;
+            left: 360px;
+            position: absolute;
+        }
+    }
+}
+
+@media (max-width: 1660px){
+    .price{
+        &__decor-item-3{
+            &::after,
+            &::before{
+                content: none;
+            }
+        }
+    }
+}
+@media (max-width: 1270px){
+    .price{
+        &__decor-item-1{
+            &::before{
+                content: none;
+            }
+        }
+        &__decor-item-2{
+            &::before{
+                content: none;
+            }
+        }
+    }
+}
