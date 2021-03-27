@@ -11,8 +11,14 @@
         max-width: 85px;
         width: 100%;
         height: auto;
-        margin-left: 10px;
-      
-        
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 768px){
+    .work{
+        &__item-name{
+            margin-left: 0;
+        } 
     }
 }
