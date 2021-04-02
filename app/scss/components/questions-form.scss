@@ -34,28 +34,7 @@
         transition: .5s;
     }
 }
-.accordion-button:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
-.accordion-button {
-    background-color: none !important;
-  }
 
-.accordion-button::after{
-    position: absolute;
-    background-size: 1.1rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    left: -58px;
-    top: 17px;
-    color: #333;
-    
-}
-.accordion-button:not(.collapsed)::after{
-    transform: rotate(-90deg) !important;
-    color: #333;
-}
 
 @media (max-width: 768px){
     .questions{
